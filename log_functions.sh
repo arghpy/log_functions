@@ -40,7 +40,7 @@ log_it()
 
     DATE="$(date +"%Y-%m-%d %H:%M:%S")"
     if [ -n "${log_message}" ]; then
-        printf "%b[ %s ] %s: %b%s\\n" "${log_color}" "${log_status}" "${DATE}" "${RESET}" "${log_message}"
+        printf "%b[ %-11s ] %s: %s%b\\n" "${log_color}" "${log_status}" "${DATE}" "${log_message}" "${RESET}"
     fi
 }
 
