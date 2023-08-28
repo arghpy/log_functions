@@ -48,15 +48,3 @@ log_ok() { LOG_LEVEL_FUNCTION="OK" ; log_it "$*"; }
 log_warning() { LOG_LEVEL_FUNCTION="WARNING" ; log_it "$*"; }
 log_error() { LOG_LEVEL_FUNCTION="ERROR" ; log_it "$*"; }
 log_info() { LOG_LEVEL_FUNCTION="INFO" ; log_it "$*"; }
-
-
-log_check_function()
-{
-    FUNC="${1}"
-
-    if $FUNC; then
-        log_ok "${FUNC}: OK"
-    else
-        log_error "${FUNC}: ERROR"
-    fi
-}
