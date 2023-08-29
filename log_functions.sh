@@ -17,7 +17,6 @@ log_it()
     local log_color=''
     local log_message="$*"
 
-    log_colors
 
     case ${LOG_LEVEL_FUNCTION} in
         "OK")
@@ -48,3 +47,4 @@ log_ok() { LOG_LEVEL_FUNCTION="OK" ; log_it "$*"; }
 log_warning() { LOG_LEVEL_FUNCTION="WARNING" ; log_it "$*"; }
 log_error() { LOG_LEVEL_FUNCTION="ERROR" ; log_it "$*"; }
 log_info() { LOG_LEVEL_FUNCTION="INFO" ; log_it "$*"; }
+log_colors
