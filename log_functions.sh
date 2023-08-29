@@ -37,7 +37,7 @@ log_it()
             ;;
     esac
 
-    #DATE="$(date +"%Y-%m-%d %H:%M:%S")"
+    DATE="$(date +"%Y-%m-%d %H:%M:%S")"
     if [ -n "${log_message}" ]; then
         printf "%b[ %-11s ] : %s%b\\n" "${log_color}" "${log_status}" "${log_message}" "${RESET}"
     fi
