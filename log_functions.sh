@@ -39,7 +39,7 @@ log_it()
 
     DATE="$(date +"%Y-%m-%d %H:%M:%S")"
     if [ -n "${log_message}" ]; then
-        printf "%b[ %-11s ] %s: %s%b\\n" "${log_color}" "${log_status}" "${DATE}" "${log_message}" "${RESET}" | tee -a "${LOG_FILE}"
+        printf "%b[ %-11s ] %s: %s%b\\n" "${log_color}" "${log_status}" "${DATE}" "${log_message}" "${RESET}"
     fi
 }
 
