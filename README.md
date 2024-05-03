@@ -1,3 +1,6 @@
-# log_functions
+# Functions
 
-[![Super-Linter](https://github.com/arghpy/log_functions/actions/workflows/manage_pull_requests.yaml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+This repository contains different functions that I use in scripts
+and for logging purposes.
+
+
